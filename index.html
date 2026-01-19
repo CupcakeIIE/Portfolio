@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Julie Eymery - Portfolio CV</title>
+
+    <!-- icons link -->
+    <script src="https://kit.fontawesome.com/8f6778798a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="to_top">
+        <div class="enfant1"><span>Julie Eymery</span></div>
+        <div class="enfant2"><ul class="header__menu">
+            <li><span onclick="link_home()">ACCUEIL</span></li>
+            <li><span onclick="link_projects()">PROJETS</span></li>
+            <li><span onclick="link_skills()">COMP&Eacute;TENCES</span></li>
+            <li><span onclick="link_career()">EXP&Eacute;RIENCE</span></li>
+            <li><span onclick="link_aboutme()">&Agrave; PROPOS DE MOI</span></li>
+        </ul></div>
+    </header>
+    <!-- header -->
+
+    <!-- home -->
+    <div class="home" id="home">
+        <div class="home__left">
+            <h1 class="phrase_gras">Je suis Julie Eymery</h1>
+            <p>Une ingénieure à la recherche d'un emploi commençant après février 2026.</p>
+            <div class="button">
+                <p>
+                    <a href="Julie_Eymery_CV.pdf" target="_blank">Voir mon CV</a>
+                </p>
+            </div>
+        </div>
+        <div class="home__mid"></div>
+        <div class="home__right">
+            <img src="DSC_0086.jpg">
+        </div>
+    </div>
+    <!-- home -->
+    
+    <!-- Mon expérience -->
+    
+    <section class="experience" id="experience">
+        <h1 class="title_bis">MES PROJETS ET EXP&Eacute;RIENCES PROFESSIONNELLES</h1>
+        <div class="experience__case">
+            <div class="div1" onclick="link_recherche()"><span>Stage de recherche</span></div>
+            <div class="div2" onclick="link_memory()"><span>Memory/Puzzle</span></div>
+            <div class="div3" onclick="link_jeu2d()"><span>Jeu 2D</br>(Niveau 1)</span></div>
+            <div class="div4" onclick="link_hanabi()"><span>Hanabi</span></div>
+            <div class="div5" onclick="link_stage2()"><span>Stage d'entrepreunariat</span></div>
+            <div class="div6" onclick="link_coinche()"><span>Jeu de Coinche</span></div>
+            <div class="div7" onclick="link_portfolio()"><span>Site Portfolio</span></div>
+            <div class="div8" onclick="link_limpide()"><span>Stage de fin d'études</span></div>
+            <div class="div9" onclick="link_romans()"><span>Site d'Informations sur des Romans</span></div>
+        </div>
+        <div class="stage1" id="recherche">
+            <div class="titre">Stage de recherche</div>
+            <div class="texte"><p><i>&Eacute;té 2022 - Evry</i>
+            </br>
+            </br>Pendant ce stage, j'ai rejoint un projet déjà existant. En utilisant une base de données de génome Neo4J, j'ai analysé les données existantes et les ai regroupés en cluster de différentes manières à l'aide de Python et Cypher.
+            </br>Ensuite, j'ai documenté mes résultats pour les remettre à l'organisation de recherche.</p></div>
+        </div>
+        <div class="memory" id="puzzle">
+            <div class="titre">Memory/Puzzle</div>
+            <div class="texte"><p><i>&Eacute;té 2023 - Evry</i>
+            </br>
+            </br>Au cours de ce projet presonnel, codé sous Unity, j'ai créé un jeu de Memory qui peut se jouer de différentes façons. Il est possible d'y jouer seul, ou contre l'ordinateur dont j'ai codé les choix. Il y a plusieurs difficultés contre le bot, pour cela, j'ai fait varier sa marge d'erreurs de nulle à presque 50%. Puis j'ai ajouté un jeu de puzzle pour rester dans la continuité des mini-jeux.</p></div>
+        </div>
+        <div class="jeu2d" id="jeu">
+            <div class="titre">Jeu 2D (Niveau 1)</div>
+            <div class="texte"><p>Cette fois-ci, j'ai voulu changer de type de jeux, j'ai donc opté pour un jeu 2D de style arcade, ici aussi j'ai utilisé Unity. J'ai uniquement créer le niveau 1 et les graphismes sont vraiment basiques pour la plupart.
+            </br>Le joueur doit collecter plusieursobjets au cours du niveau pour débloquer la porte de sortie du niveau. Sur le trajet, le héros va rencontrer des monstres qu'il peut vaincre ou éviter en sautant sur des plateformes.
+            </br>J'ai également ajouté un menu pour lancer une partie de jeu déjà existante ou en créer une nouvelle.
+            </p></div>
+        </div>
+        <div class="hanabi" id="hana">
+            <div class="titre">Hanabi</div>
+            <div class="texte"><p><i>Automne 2023</i>
+            </br>
+            </br>Ce jeu a été créé lors d'un projet de cours. C'est un jeu de plateau en ligne, le Hanabi.
+            </br>Mon travail dans ce projet a été d'implémenter toutes les règles du jeu ainsi que les mécaniques du jeu. J'ai utilisé du HTML, du CSS et du Javascript. Tout était fait locallement, donc le pseudo multi joueur se faisait sur le même onglet, les mains des joueurs étaient donc ouvertes. Puis un collègue a mis en place la partie multi joueur en ligne.</p></div>
+        </div>
+        <div class="stage2" id="stage2a">
+            <div class="titre">Stage d'entrepreunariat</div>
+            <div class="texte"><p><i>&Eacute;té 2024 - Evry</i>
+            </br>
+            </br>Avec plusieurs collègues, nous avons voulu découvrir le monde de l'entrepreunariat, pour cela nous avons créer une startup le temps d'un été.
+            </br>Nous étions 3, avec pour but de créer un jeu vidéo (à l'aide de Unity) sans visuels, spécifiquement conçu pour les personnes aveugles ou ayant des déficiences visuelles.
+            </br>Pour réussir au mieux notre expérience entrepreunariale, nous avons contacté des associations d'aide aux personnes malvoyantes et aveugles pour nous aiguiller lors de la création et nous donner des pistes d'améliorations après qu'ils aient fait tester notre première version de jeu, pour que l'on ait un résultat le plus probant possible.
+        </p></div>
+        </div>
+        <div class="coinche" id="coi">
+            <div class="titre">Jeu de Coinche</div>
+            <div class="texte"><p><i>2024</i>
+            </br>
+            </br>Au départ, j'ai créé le jeu localement, c'est à dire que le jeu se déroulait sur le même écran et donc que tout se faisait à mains ouvertes.
+            </br>Le but était de d'abord établir les mécaniques du jeu et les différentes règles.
+            </br>Puis, j'ai transformé le jeu local en un jeu multi joueur en ligne, en gérant les différentes lobby de jeu et les tours.</p></div>
+        </div>
+        <div class="portfolio" id="site">
+            <div class="titre">Site Portfolio</div>
+            <div class="texte">
+                <p><i>Octobre 2024</i>
+                </br>
+                </br>Comme vous pouvez le voir, j'ai codé un site portfolio pour résumer mes expériences, mes projets et mes compétences.
+                </p>
+            </div>
+        </div>
+        <div class="limpide" id="limpide">
+            <div class="titre">Stage de fin d'études</div>
+            <div class="texte">
+                <p><i>Juin-Décembre 2025</i>
+                </br>
+                </br>Lors de ce stage, j'ai pu ajouter des fonctionnalités à un CRM déjà existant, en corriger d'autres ou en améliorer.
+                </br>Ici, j'ai appris à utiliser React et la librairie MUI, ainsi que la base de données MongoDB.
+                </p>
+            </div>
+        </div>
+        <div class="romans" id="romans">
+            <div class="titre">Site d'Informations sur des Romans</div>
+            <div class="texte">
+                <p><i>Depuis Aout 2025</i>
+                </br>
+                </br>Ce site permet d'ajouter des informations sur des romans, d'en consulter, d'en modifier. En créant un compte, plus de fonctionnalités sont dispopnibles, comme des statistiques de lecture.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Mon expérience -->
+
+
+    <!-- Mes skills -->
+    <section class="skills" id="skills">
+        <h1 class="title_bis">Mes Compétences</h1>
+        <img src="skills2.png">
+    </section>
+    <!-- Mes skills -->
+
+
+    <!-- Mon parcours -->
+    <section class="parcours" id="career">
+        <h1 class="title_bis">Mes Expériences</h1>
+        <div class="parcours__case">
+            <div class="div1bis">
+                <p><b>Lycée Anita Conti</b></br><i>(2016-2019)</i></br></br>Bac S option SVT,</br>Specialité mathematiques</br>Bac mention Très Bien</p>
+            </div>
+            <div class="div2bis">
+                <p><b>Lycée Chateaubriand</b></br><i>(2019-2021)</i></br></br>MPSI</br>MP avec spécialisation en</br>Informatique</p>
+            </div>
+            <div class="div3bis">
+                <p><b>ENSIIE</b></br><i>(2021-2025)</i></br></br>Spécialisée en</br>Intéractions numériques
+            </p></div>
+        </div>
+    </section>
+    <!-- Mon parcours -->
+
+    <!-- About me -->
+    <section class="about_me" id="aboutme">
+        <h1 class="title_bis">&Agrave; propos de moi</h1>
+        <div class="about_me_table">
+            <div class="aboutme_left">
+                <img src="20211216-215317.jpg">
+            </div>
+            <div class="aboutme_right">
+                <p ALIGN="right">
+                    <br/><b>Nom : </b>Julie Eymery
+                    <br/><b>Adresse : </b>46 La Ménairie 35 580 Baulon, France
+                    <br/><b>Mail : </b>eymery.juju@gmail.com
+                    <br/><b>Téléphone : </b>+33 7 80 50 47 61
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- About me -->
+    
+
+    <!-- footer -->
+    <footer>
+        <div class="text">            
+            <p>&copy;copyright, all right is reserved</p>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    
+    <script>
+    // Références des sections (INCHANGÉES)
+    const crecherche = document.querySelector(".stage1");
+    const cmemory = document.querySelector(".memory");
+    const cjeu2d = document.querySelector(".jeu2d");
+    const chanabi = document.querySelector(".hanabi");
+    const cstage2 = document.querySelector(".stage2");
+    const ccoinche = document.querySelector(".coinche");
+    const cportfolio = document.querySelector(".portfolio");
+    const climpide = document.querySelector(".limpide");
+    const cromans = document.querySelector(".romans");
+
+    const allSections = [
+        crecherche,
+        cmemory,
+        cjeu2d,
+        chanabi,
+        cstage2,
+        ccoinche,
+        cportfolio,
+        climpide,
+        cromans
+    ];
+
+    function showSection(sectionToShow, anchorId) {
+        allSections.forEach(section => {
+            section.style.display = "none";
+        });
+
+        sectionToShow.style.display = "block";
+        location.href = "#" + anchorId;
+    }
+
+    function link_recherche() {
+        showSection(crecherche, "recherche");
+    }
+
+    function link_memory() {
+        showSection(cmemory, "puzzle");
+    }
+
+    function link_jeu2d() {
+        showSection(cjeu2d, "jeu");
+    }
+
+    function link_hanabi() {
+        showSection(chanabi, "hana");
+    }
+
+    function link_stage2() {
+        showSection(cstage2, "stage2a");
+    }
+
+    function link_coinche() {
+        showSection(ccoinche, "coi");
+    }
+
+    function link_portfolio() {
+        showSection(cportfolio, "site");
+    }
+
+    function link_limpide() {
+        showSection(climpide, "limpide");
+    }
+
+    function link_romans() {
+        showSection(cromans, "romans");
+    }
+</script>
+
+</body>
+</html>
