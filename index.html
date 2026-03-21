@@ -32,7 +32,7 @@
             <p>Une ingénieure à la recherche d'un emploi commençant après février 2026.</p>
             <div class="button">
                 <p>
-                    <a href="Julie Eymery_CV-19_01_2025.pdf" target="_blank">Voir mon CV</a>
+                    <a href="Julie Eymery_CV.pdf" target="_blank">Voir mon CV</a>
                 </p>
             </div>
         </div>
@@ -57,6 +57,8 @@
             <div class="div7" onclick="link_portfolio()"><span>Site Portfolio</span></div>
             <div class="div8" onclick="link_limpide()"><span>Stage de fin d'études</span></div>
             <div class="div9" onclick="link_romans()"><span>Site d'Informations sur des Romans</span></div>
+            <div class="div10" onclick="link_minigames()"><span>Site de Mini-Jeux</span></div>
+            <div class="div11" onclick="link_coinchereact()"><span>Site d'un Jeu de Coinche</span></div>
         </div>
         <div class="stage1" id="recherche">
             <div class="titre">Stage de recherche</div>
@@ -117,8 +119,7 @@
                 <p><i>Juin-Décembre 2025</i>
                 </br>
                 </br>Lors de ce stage, j'ai pu ajouter des fonctionnalités à un CRM déjà existant, en corriger d'autres ou en améliorer.
-                </br>Ici, j'ai appris à utiliser React et la librairie MUI, ainsi que la base de données MongoDB.
-                </p>
+                </br>Ici, j'ai appris à utiliser React et la librairie MUI, ainsi que la base de données MongoDB.</p>
             </div>
         </div>
         <div class="romans" id="romans">
@@ -127,6 +128,27 @@
                 <p><i>Depuis Aout 2025</i>
                 </br>
                 </br>Ce site permet d'ajouter des informations sur des romans, d'en consulter, d'en modifier. En créant un compte, plus de fonctionnalités sont dispopnibles, comme des statistiques de lecture.
+                </p>
+            </div>
+        </div>
+        <div class="minigames" id="minigames">
+            <div class="titre">Site de Mini Jeux</div>
+            <div class="texte">
+                <p><i>Février 2026</i>
+                </br>
+                </br>Site regroupant divers mini-jeux pour s'amuser.
+                <br/>N'hésitez pas à venir découvrir <a href='https://cupcakeiie.github.io/MiniGames/'>ici</a>.
+                </p>
+            </div>
+        </div>
+        <div class="coinchereact" id="coinchereact">
+            <div class="titre">Site d'un Jeu de Coinche</div>
+            <div class="texte">
+                <p><i>Depuis Mars 2026</i>
+                </br>
+                </br>Ce projet correspond à une version amélioré et finie du jeu de coinche commencé précédemment sur Unity.
+                <br/>Cette fois j'ai utilisé React, ainsi que Playroom Kit (pour la gestion des rooms).
+                <br/>Bientôt, le jeu sera disponible en ligne. Une fois que toutes les vérifications et tests seront finis.
                 </p>
             </div>
         </div>
@@ -164,7 +186,7 @@
         <h1 class="title_bis">&Agrave; propos de moi</h1>
         <div class="about_me_table">
             <div class="aboutme_left">
-                <img src="20211216-215317.jpg">
+                <img src="cup - Copie.jpg">
             </div>
             <div class="aboutme_right">
                 <p ALIGN="right">
@@ -172,6 +194,7 @@
                     <br/><b>Adresse : </b>46 La Ménairie 35 580 Baulon, France
                     <br/><b>Mail : </b>eymery.juju@gmail.com
                     <br/><b>Téléphone : </b>+33 7 80 50 47 61
+                    <br/><b>Hobbies : </b>Lire, coder, jouer aux jeux vidéos, dessiner
                 </p>
             </div>
         </div>
@@ -189,7 +212,6 @@
 
     
     <script>
-    // Références des sections (INCHANGÉES)
     const crecherche = document.querySelector(".stage1");
     const cmemory = document.querySelector(".memory");
     const cjeu2d = document.querySelector(".jeu2d");
@@ -199,6 +221,8 @@
     const cportfolio = document.querySelector(".portfolio");
     const climpide = document.querySelector(".limpide");
     const cromans = document.querySelector(".romans");
+    const cminigames = document.querySelector(".minigames");
+    const ccoinchereact = document.querySelector(".coinchereact");
 
     const allSections = [
         crecherche,
@@ -209,7 +233,9 @@
         ccoinche,
         cportfolio,
         climpide,
-        cromans
+        cromans,
+        cminigames,
+        ccoinchereact,
     ];
 
     function showSection(sectionToShow, anchorId) {
@@ -255,6 +281,14 @@
 
     function link_romans() {
         showSection(cromans, "romans");
+    }
+
+    function link_minigames() {
+        showSection(cminigames, "minigames");
+    }
+
+    function link_coinchereact() {
+        showSection(ccoinchereact, "coinchereact");
     }
 </script>
 
