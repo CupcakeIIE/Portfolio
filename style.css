@@ -1,4 +1,9 @@
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -771,7 +776,7 @@ footer {
 
 
 
-@media(max-width:400px)
+/* @media(max-width:400px)
 {
     header {
         flex-direction: column;
@@ -831,5 +836,168 @@ footer {
         margin-bottom: 30px;
         margin-top: 30px;
         flex-direction: column;
+    }
+} */
+
+
+@media (max-width: 768px) {
+    /* html, body {
+        width: 82%;
+    } */
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    header::after {
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .header__menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .header__menu span {
+        margin: 5px 10px;
+        font-size: 14px;
+    }
+
+    /* HOME */
+    .home {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .home__left {
+        width: 100%;
+    }
+
+    .home__mid {
+        display: none;
+    }
+
+    .home__right {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .home__right img {
+        width: 100%;
+    }
+
+    .phrase_gras {
+        font-size: 22px;
+    }
+
+    /* BOUTON */
+    .button {
+        margin: 20px auto;
+        padding: 10px 20px;
+    }
+
+    .button a {
+        font-size: 18px;
+    }
+
+    /* SECTIONS */
+    .experience, .parcours, .about_me, .skills {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .title_bis {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* EXPERIENCE GRID */
+    .experience__case {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .experience__case div {
+        height: 120px;
+    }
+
+    .experience__case span {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* DETAILS PROJETS */
+    .titre {
+        font-size: 22px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .texte p {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: justify;
+    }
+
+    /* PARCOURS */
+    .parcours__case {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .parcours__case div {
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .parcours__case p {
+        font-size: 14px;
+    }
+
+    /* SKILLS */
+    .skills img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* ABOUT ME */
+    .about_me_table {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .aboutme_left {
+        width: 100%;
+    }
+
+    .aboutme_left img {
+        width: 70%;
+    }
+
+    .aboutme_right {
+        width: 100%;
+    }
+
+    .aboutme_right p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
     }
 }
