@@ -2,6 +2,10 @@
 html, body {
     width: 100%;
     overflow-x: hidden;
+
+}
+html {
+    scroll-behavior: smooth;
 }
 
 *{
@@ -10,6 +14,8 @@ html, body {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+
 
 
 /* scrollbar */
@@ -79,7 +85,7 @@ header span {
 }
 
 
-.header__menu span {
+/* .header__menu span {
     margin-left: 20px;
     padding-bottom: 3px;
     position: relative;
@@ -100,8 +106,32 @@ header span {
 }
 .header__menu span:hover:after {
     width: 100%;
+} */
+.header__menu a {
+    margin-left: 20px;
+    padding-bottom: 3px;
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none; /* IMPORTANT */
 }
 
+.header__menu a::after {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: #fff;
+    transition: 0.5s ease-out;
+}
+
+.header__menu a:hover::after {
+    width: 100%;
+}
 
 
 

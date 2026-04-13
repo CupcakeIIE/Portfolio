@@ -16,11 +16,11 @@
     <header id="to_top">
         <div class="enfant1"><span>Julie Eymery</span></div>
         <div class="enfant2"><ul class="header__menu">
-            <li><span onclick="link_home()">ACCUEIL</span></li>
-            <li><span onclick="link_projects()">PROJETS</span></li>
-            <li><span onclick="link_skills()">COMP&Eacute;TENCES</span></li>
-            <li><span onclick="link_career()">EXP&Eacute;RIENCE</span></li>
-            <li><span onclick="link_aboutme()">&Agrave; PROPOS DE MOI</span></li>
+            <li><a href="#home">ACCUEIL</a></li>
+            <li><a href="#experience">PROJETS</a></li>
+            <li><a href="#skills">COMPÉTENCES</a></li>
+            <li><a href="#career">EXPÉRIENCE</a></li>
+            <li><a href="#aboutme">À PROPOS DE MOI</a></li>
         </ul></div>
     </header>
     <!-- header -->
@@ -214,29 +214,51 @@
     <script>
 
         
-    // to the top fonction
-    function link_home() {
-        location.href="#home"
-    }
+    // // to the top fonction
+    // function link_home() {
+    //     location.href="#home"
+    // }
 
     
-    function link_projects() {
-        location.href="#experience"
-    }
+    // function link_projects() {
+    //     location.href="#experience"
+    // }
 
-    function link_skills() {
-        location.href="#skills"
-    }
+    // function link_skills() {
+    //     location.href="#skills"
+    // }
     
-    function link_career() {
-        location.href="#career"
-    }
+    // function link_career() {
+    //     location.href="#career"
+    // }
 
-    function link_aboutme() {
-        location.href="#aboutme"
-    }
+    // function link_aboutme() {
+    //     location.href="#aboutme"
+    // }
 
+    // const homeSection = document.querySelector("#home");
+    // const experienceSection = document.querySelector("#experience");
+    // const skillsSection = document.querySelector("#skills");
+    // const careerSection = document.querySelector("#career");
+    // const aboutSection = document.querySelector("#aboutme");
     
+    // const mainSections = [
+    //     homeSection,
+    //     experienceSection,
+    //     skillsSection,
+    //     careerSection,
+    //     aboutSection
+    // ];
+
+    // function showMain(sectionToShow, anchorId) {
+    //     mainSections.forEach(section => {
+    //         section.style.display = "none";
+    //     });
+
+    //     sectionToShow.style.display = "block";
+    //     location.href = "#" + anchorId;
+    // }
+
     const crecherche = document.querySelector(".stage1");
     const cmemory = document.querySelector(".memory");
     const cjeu2d = document.querySelector(".jeu2d");
